@@ -19,7 +19,7 @@ export async function GET (req: NextRequest) {
     return NextResponse.json({
       code: 0,
       data: await chat({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4.1-mini',
         stream: false,
         messages: [{ role: 'user', content: 'Hello' }]
       })
